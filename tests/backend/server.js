@@ -18,7 +18,8 @@ app.use(express.json())
 
 app.use(routes)
 
-const PORT = 5000;
+// const PORT = 5000;
+const PORT = process.env.PORT
 
 app.listen(PORT, () =>{
    console.log(`Server Is Running on Port ${PORT}`);
